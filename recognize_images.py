@@ -1,5 +1,5 @@
 # USAGE
-# python recognize_faces_image.py --encodings encodings.pickle --image examples/example_01.png 
+# python recognize_faces_image.py --encodings encodings.pickle --image {directory of testing image in png}
 
 # import the necessary packages
 import face_recognition
@@ -18,7 +18,7 @@ ap.add_argument("-d", "--detection-method", type=str, default="cnn",
 args = vars(ap.parse_args())
 
 # load the known faces and embeddings
-print("[INFO] loading encodings...")
+print("[Loading Encodings.....")
 data = pickle.loads(open(args["encodings"], "rb").read())
 
 # load the input image and convert it from BGR to RGB
