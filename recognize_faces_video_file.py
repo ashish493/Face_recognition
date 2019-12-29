@@ -1,6 +1,5 @@
 # USAGE
-# python recognize_faces_video_file.py --encodings encodings.pickle --input videos/lunch_scene.mp4
-# python recognize_faces_video_file.py --encodings encodings.pickle --input videos/lunch_scene.mp4 --output output/lunch_scene_output.avi --display 0
+# python recognize_faces_video_file.py --encodings encodings.pickle --input {directory of input video}--output {directory of output with name and avi extension} --display 0
 
 # import the necessary packages
 import face_recognition
@@ -29,7 +28,7 @@ print("[INFO] loading encodings...")
 data = pickle.loads(open(args["encodings"], "rb").read())
 
 # initialize the pointer to the video file and the video writer
-print("[INFO] processing video...")
+print("Processing video.....")
 stream = cv2.VideoCapture(args["input"])
 writer = None
 
