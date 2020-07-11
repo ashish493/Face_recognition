@@ -11,3 +11,4 @@ as the dataset for training.
 It uses CNN (from opencv module) for training of images.
 I'm not using any frameworks like pytorch, tensorflow, as this is meant to be a simple project...
 
+This project is based on [this](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/) blog.
